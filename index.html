@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Busca una receta por su ingrediente</h1>
+    <div>
+      <input
+        type="text"
+        id="ingredient-input"
+        placeholder="Introduzca uno de los siguientes ingredientes"
+      />
+      <button id="search-btn">Search</button>
+    </div>
+
+    <h2>Ingredientes disponibles</h2>
+    <div id="ingredients-list"></div>
+
+    <h2>Recetas</h2>
+    <div id="recipes-grid"></div>
+
+    <!-- Modal -->
+    <div id="recipe-modal">
+      <div id="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2 id="modal-name"></h2>
+        <img id="modal-image" src="" alt="Recipe Image" />
+        <p id="modal-instructions"></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
